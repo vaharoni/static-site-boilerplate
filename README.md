@@ -33,3 +33,10 @@ the `gh-pages` branch at its root. Check out the `gh-pages` branch on this repo 
 
 Run [bin/dev](bin/dev) to have Jekyll, esbuild, and Tailwind watch for files and recreate `docs/_site` using Foreman.
 Your site is served from [http://localhost:4000](http://localhost:4000) using Webrick as usual.
+
+## Sitemap
+
+The [sitemap.xml](sitemap.xml) file generates I18n alternate links. It is quite basic. 
+If you need more control over the last modified or change frequency fields, 
+refer to [this article](http://www.independent-software.com/generating-a-sitemap-xml-with-jekyll-without-a-plugin.html)
+or use one of the sitemap plugins for Jekyll.
