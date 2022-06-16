@@ -5,7 +5,8 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 {% for page in site.pages %}
-    {% if page.url != '/sitemap.xml' %}
+    {% assign ignore = "/sitemap.xml,/404.html" | split: "," %}
+    {% unless ignore contains page.url %}
 <url>
     <loc>{{ site.baseurl_root }}{{ page.url | remove: "index.html" | remove: ".html" }}</loc>
         {% if page.date %}
@@ -23,6 +24,6 @@ layout: null
             {% endif %}
         {% endfor %}
 </url>
-    {% endif %}
+    {% endunless %}
 {% endfor %}
 </urlset>
