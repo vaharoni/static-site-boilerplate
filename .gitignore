@@ -1,8 +1,0 @@
-node_modules/
-.idea/
-.DS_Store
-.bundle/
-_site/
-*-cache/
-.jekyll-metadata
-*.log
