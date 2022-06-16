@@ -36,7 +36,7 @@ Your site is served from [http://localhost:4000](http://localhost:4000) using We
 
 ## Sitemap
 
-The [sitemap.xml](sitemap.xml) file generates I18n alternate links. It is quite basic. 
+The [sitemap.xml](docs/sitemap.xml) file generates I18n alternate links. It is quite basic. 
 If you need more control over the last modified or change frequency fields, 
 refer to [this article](http://www.independent-software.com/generating-a-sitemap-xml-with-jekyll-without-a-plugin.html)
 or use one of the sitemap plugins for Jekyll.
