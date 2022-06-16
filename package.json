@@ -1,5 +1,4 @@
 {
-  "author": "Amit Aharoni",
   "license" : "MIT",
   "devDependencies": {
     "esbuild": "^0.14.44",
