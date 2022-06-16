@@ -28,7 +28,7 @@ push an update to the `main` branch.
 
 ## CSS
 
-To add common styles to DOM elements, update 
+To apply standard styles on your HTML tags without repeating utility classes for each instance, update 
 [docs/assets/stylesheets/tailwind.css](docs/assets/stylesheets/tailwind.css) per 
 [Tailwind's documentation](https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer).
 
