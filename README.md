@@ -3,6 +3,11 @@
 Boilerplate for a static website that supports internationalization using Jekyll, esbuild, and Tailwind CSS.
 Ready to use with Github Pages.
 
+When forking, remember to:
+- update the `baseurl` entry in `docs/_config.yml`
+- update the `author` entry in `package.json`
+- if you're using Github Pages to serve the website from a custom domain, add a `docs/CNAME` file with your domain (e.g. `www.example.com`)  
+
 ## Contents
 
 - [Jekyll](https://jekyllrb.com/) and 
