@@ -1,7 +1,11 @@
 # Static website boilerplate
 
-This repo is a template of a static website that supports internationalization using Jekyll, esbuild, and Tailwind CSS.
+This repo is a template of a static website that supports internationalization. 
+It uses Jekyll, esbuild, and Tailwind CSS.
 Ready to use with Github Pages.
+
+Check out the `gh-pages` branch on this repo or visit the [Github Pages endpoint](https://vaharoni.github.io/static-site-boilerplate/) 
+to see what the output of the template looks like.
 
 ## Contents
 
@@ -60,7 +64,7 @@ or use one of the sitemap plugins for Jekyll.
 
 When pushing changes to the `main` branch on Github, the [.github/workflows/build.yml](.github/workflows/build.yml) 
 Github Action runs the [bin/build](bin/build) script, and commits the resulting files in `docs/_site` into 
-the `gh-pages` branch at its root. Check out the `gh-pages` branch on this repo to see what the output looks like.
+the `gh-pages` branch at its root. 
 
 [bin/build](bin/build) performs the following:
 - Jekyll processes files in the `docs` folder, generating static files in `docs/_site`
