@@ -1,0 +1,19 @@
+# First language is the default language
+languages: ["en"]
+
+keep_files:
+  - .git
+  - assets/javascripts
+  - assets/stylesheets
+
+exclude:
+  - assets/javascripts
+  - assets/stylesheets
+
+# Excluding files with front matter won't work. Workaround: add rm directives in bin/build
+exclude_from_localizations:
+  - assets
+  - CNAME
+
+plugins:
+  - jekyll-multiple-languages-plugin

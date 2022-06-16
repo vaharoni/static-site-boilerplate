@@ -1,0 +1,28 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% for page in site.pages %}
+    {% if page.url != '/sitemap.xml' %}
+<url>
+    <loc>{{ site.baseurl_root }}{{ page.url | remove: "index.html" | remove: ".html" }}</loc>
+        {% if page.date %}
+    <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+        {% else %}
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        {% endif %}
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+        {% for lang in site.languages %}
+            {% if lang == site.default_lang %}
+    <xhtml:link rel="alternate" hreflang="{{ lang }}" href="{{ site.baseurl_root }}{{ page.url | remove: "index.html" | remove: ".html" }}" />
+            {% else %}
+    <xhtml:link rel="alternate" hreflang="{{ lang }}" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url | remove: "index.html" | remove: ".html" }}" />
+            {% endif %}
+        {% endfor %}
+</url>
+    {% endif %}
+{% endfor %}
+</urlset>

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+yarn build:html
+yarn build:css
+yarn build:js
+
+# Add rm directives here to fix issue with exclude_from_localizations that ignores files with front matter
+rm docs/_site/*/sitemap.xml
+rm docs/_site/*/404.html
