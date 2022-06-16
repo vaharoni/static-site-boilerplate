@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    
+<url>
+    <loc>/404</loc>
+        
+    <lastmod>2022-06-16T17:58:10+00:00</lastmod>
+        
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+        
+            
+    <xhtml:link rel="alternate" hreflang="en" href="/404" />
+            
+        
+</url>
+    
+
+    
+<url>
+    <loc>/</loc>
+        
+    <lastmod>2022-06-16T17:58:10+00:00</lastmod>
+        
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+        
+            
+    <xhtml:link rel="alternate" hreflang="en" href="/" />
+            
+        
+</url>
+    
+
+    
+
+</urlset>
